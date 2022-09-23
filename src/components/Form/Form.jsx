@@ -29,7 +29,7 @@ export const Form =()=> {
     const onFormSubmit = e => {
         e.preventDefault();
         const newContact = { id: nanoid(), name, number };
-
+        
         if (contacts.some(({ name }) => name === newContact.name)) {
             alert(`${newContact.name} is already in contacts!`);
             return;

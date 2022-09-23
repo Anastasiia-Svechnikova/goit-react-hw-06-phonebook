@@ -19,9 +19,7 @@ export const App = () => {
         {contacts.length ? (
           <>
             <Filter />
-            <ContactsList
-              
-            />
+            <ContactsList />
           </>
         ) : (
           <EmptyNotification />
